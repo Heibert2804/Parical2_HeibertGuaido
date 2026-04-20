@@ -2,13 +2,13 @@ public class ObjCliente {
     private int Id;
     private String Nombre;
     private String TipoServicio;
-    private int HoraLlegada;
+    private String HoraLlegada;
     private boolean Atendido;
     
     public ObjCliente() {
     }
 
-    public ObjCliente(int id, String nombre, String tipoServicio, int horaLlegada, boolean atendido) {
+    public ObjCliente(int id, String nombre, String tipoServicio, String horaLlegada, boolean atendido) {
         Id = id;
         Nombre = nombre;
         TipoServicio = tipoServicio;
@@ -40,20 +40,20 @@ public class ObjCliente {
         TipoServicio = tipoServicio;
     }
 
-    public int getHoraLlegada() {
-        return HoraLlegada;
-    }
-
-    public void setHoraLlegada(int horaLlegada) {
-        HoraLlegada = horaLlegada;
-    }
-
     public boolean isAtendido() {
         return Atendido;
     }
 
     public void setAtendido(boolean atendido) {
         Atendido = atendido;
+    }
+
+    public String getHoraLlegada() {
+        return HoraLlegada;
+    }
+
+    public void setHoraLlegada(String horaLlegada) {
+        HoraLlegada = horaLlegada;
     }
 
 }
