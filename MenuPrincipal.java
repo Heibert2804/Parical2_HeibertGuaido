@@ -6,17 +6,18 @@ public class MenuPrincipal {
         Scanner sc = new Scanner(System.in);
         PrincipalCola c = new PrincipalCola();
         PrincipalPila p = new PrincipalPila();
+        System.out.println("BIENVENIDO\n");
         while (seguir) {
             System.out.println("1. Ir al navegadro web");
-            System.out.println("2. ir al sistema del banco");
+            System.out.println("2. Ir al sistema del banco");
             System.out.println("3. Salir");
             int opt = sc.nextInt();
             switch (opt) {
                 case 1:
-                    c.iniciar();
+                    p.iniciar();
                     break;
                 case 2:
-                    p.iniciar();
+                    c.iniciar();
                     break;
                 case 3:
                     seguir = false;
